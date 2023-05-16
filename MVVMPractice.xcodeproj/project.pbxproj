@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0F2B772A136FC1003DFAB0 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2B762A136FC1003DFAB0 /* Webservice.swift */; };
 		EBD8B13A2A0DE05D00F282C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */; };
 		EBD8B13C2A0DE05D00F282C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */; };
 		EBD8B1412A0DE05D00F282C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD8B13F2A0DE05D00F282C2 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB0F2B762A136FC1003DFAB0 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		EBD8B1362A0DE05D00F282C2 /* MVVMPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB0F2B752A136F97003DFAB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F2B762A136FC1003DFAB0 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EBD8B12D2A0DE05D00F282C2 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		EBD8B14D2A0DE12C00F282C2 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				EB0F2B752A136F97003DFAB0 /* Services */,
 				EBD8B14E2A0DE13B00F282C2 /* Controllers */,
 			);
 			path = GoodNews;
@@ -156,6 +167,7 @@
 			files = (
 				EBD8B13A2A0DE05D00F282C2 /* AppDelegate.swift in Sources */,
 				EBD8B1522A0DE1A800F282C2 /* NewsListTableViewController.swift in Sources */,
+				EB0F2B772A136FC1003DFAB0 /* Webservice.swift in Sources */,
 				EBD8B13C2A0DE05D00F282C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

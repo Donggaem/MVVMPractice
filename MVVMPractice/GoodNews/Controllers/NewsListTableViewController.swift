@@ -19,5 +19,10 @@ class NewsListTableViewController: UITableViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=5023951c0ed24022966c6b974fe92a7b")!
+        
+        Webservice().getArticles(url: url) { _ in
+            
+        }
     }
 }
