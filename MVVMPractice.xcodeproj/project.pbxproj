@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EB0F2B772A136FC1003DFAB0 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2B762A136FC1003DFAB0 /* Webservice.swift */; };
 		EB0F2B7A2A13800B003DFAB0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2B792A13800B003DFAB0 /* Article.swift */; };
+		EB1654392A1BB2C400805A75 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1654382A1BB2C400805A75 /* OrdersTableViewController.swift */; };
+		EB16543B2A1BB30E00805A75 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB16543A2A1BB30E00805A75 /* AddOrderViewController.swift */; };
 		EBD8B13A2A0DE05D00F282C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */; };
 		EBD8B13C2A0DE05D00F282C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */; };
 		EBD8B1412A0DE05D00F282C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD8B13F2A0DE05D00F282C2 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		EB0F2B762A136FC1003DFAB0 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		EB0F2B792A13800B003DFAB0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		EB1654382A1BB2C400805A75 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		EB16543A2A1BB30E00805A75 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		EBD8B1362A0DE05D00F282C2 /* MVVMPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EB1654362A1BB0C800805A75 /* HotCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				EB1654372A1BB10A00805A75 /* Controllers */,
+			);
+			path = HotCoffee;
+			sourceTree = "<group>";
+		};
+		EB1654372A1BB10A00805A75 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB1654382A1BB2C400805A75 /* OrdersTableViewController.swift */,
+				EB16543A2A1BB30E00805A75 /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		EBD8B12D2A0DE05D00F282C2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +101,7 @@
 		EBD8B1382A0DE05D00F282C2 /* MVVMPractice */ = {
 			isa = PBXGroup;
 			children = (
+				EB1654362A1BB0C800805A75 /* HotCoffee */,
 				EBD8B14D2A0DE12C00F282C2 /* GoodNews */,
 				EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */,
 				EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */,
@@ -198,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1654392A1BB2C400805A75 /* OrdersTableViewController.swift in Sources */,
 				EBD8B13A2A0DE05D00F282C2 /* AppDelegate.swift in Sources */,
+				EB16543B2A1BB30E00805A75 /* AddOrderViewController.swift in Sources */,
 				EBD8B1522A0DE1A800F282C2 /* NewsListTableViewController.swift in Sources */,
 				EB0F2B772A136FC1003DFAB0 /* Webservice.swift in Sources */,
 				EBDD74E62A1505E9001E9593 /* ArticleViewModel.swift in Sources */,
