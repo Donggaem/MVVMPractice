@@ -108,10 +108,55 @@
                     <view key="view" contentMode="scaleToFill" id="nfe-gf-ZJW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-xz-da2">
+                                <rect key="frame" x="0.0" y="56" width="393" height="391.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4go-Lw-yyr">
+                                <rect key="frame" x="98" y="477" width="197" height="32"/>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Second"/>
+                                    <segment title="Lagre"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ej-gL-7H4">
+                                <rect key="frame" x="96.666666666666686" y="585" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MCq-jg-ihH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jL-SQ-CgQ">
+                                <rect key="frame" x="96.666666666666686" y="651" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OkM-R6-c6A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kft-mY-md5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0jL-SQ-CgQ" firstAttribute="centerX" secondItem="nfe-gf-ZJW" secondAttribute="centerX" id="1CO-7n-EEG"/>
+                            <constraint firstItem="Rof-xz-da2" firstAttribute="top" secondItem="kft-mY-md5" secondAttribute="top" id="5eF-vh-Wrr"/>
+                            <constraint firstItem="3ej-gL-7H4" firstAttribute="top" secondItem="4go-Lw-yyr" secondAttribute="bottom" constant="77" id="H6Z-l6-Mgb"/>
+                            <constraint firstItem="Rof-xz-da2" firstAttribute="height" secondItem="nfe-gf-ZJW" secondAttribute="height" multiplier="0.5" id="OGF-Va-VCF"/>
+                            <constraint firstItem="Rof-xz-da2" firstAttribute="leading" secondItem="kft-mY-md5" secondAttribute="leading" id="RM0-XZ-OV2"/>
+                            <constraint firstItem="4go-Lw-yyr" firstAttribute="centerX" secondItem="nfe-gf-ZJW" secondAttribute="centerX" id="UNz-25-uAD"/>
+                            <constraint firstItem="Rof-xz-da2" firstAttribute="width" secondItem="nfe-gf-ZJW" secondAttribute="width" id="d4K-jC-053"/>
+                            <constraint firstItem="0jL-SQ-CgQ" firstAttribute="top" secondItem="3ej-gL-7H4" secondAttribute="bottom" constant="32" id="kZm-Av-U9j"/>
+                            <constraint firstItem="4go-Lw-yyr" firstAttribute="top" secondItem="Rof-xz-da2" secondAttribute="bottom" constant="29.333333333333314" id="kzV-Dr-oce"/>
+                            <constraint firstItem="3ej-gL-7H4" firstAttribute="centerX" secondItem="nfe-gf-ZJW" secondAttribute="centerX" id="ma2-oa-BOS"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Order" id="DqY-IR-om6"/>
+                    <navigationItem key="navigationItem" title="Add New Order" id="DqY-IR-om6">
+                        <barButtonItem key="leftBarButtonItem" title="Close" style="plain" id="484-SJ-bVU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="8Hu-7I-HW0"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Wf-hU-tIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
