@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Webservice {
+class Webservice_News {
      
     //기사 가져오기
     func getArticles(url: URL, completion: @escaping ([Article]?) -> ()) {

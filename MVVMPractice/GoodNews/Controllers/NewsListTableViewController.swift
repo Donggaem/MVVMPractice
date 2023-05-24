@@ -23,7 +23,7 @@ class NewsListTableViewController: UITableViewController {
         
         let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=5023951c0ed24022966c6b974fe92a7b")!
         
-        Webservice().getArticles(url: url) { articles in
+        Webservice_News().getArticles(url: url) { articles in
             
             if let articles = articles {
                 
