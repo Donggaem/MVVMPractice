@@ -13,6 +13,7 @@
 		EB16543B2A1BB30E00805A75 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB16543A2A1BB30E00805A75 /* AddOrderViewController.swift */; };
 		EB22BAC02A6A7AFA005E9F94 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22BABF2A6A7AFA005E9F94 /* OrderViewModel.swift */; };
 		EB634F652A1EF02600D8DC05 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB634F642A1EF02600D8DC05 /* Order.swift */; };
+		EB7E92AE2A6B9A7D005672DB /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7E92AD2A6B9A7D005672DB /* AddCoffeeOrderViewModel.swift */; };
 		EBC57A792A1E46770099AB42 /* Webservice_Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC57A782A1E46770099AB42 /* Webservice_Coffee.swift */; };
 		EBD8B13A2A0DE05D00F282C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */; };
 		EBD8B13C2A0DE05D00F282C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8B13B2A0DE05D00F282C2 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 		EB16543A2A1BB30E00805A75 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		EB22BABF2A6A7AFA005E9F94 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		EB634F642A1EF02600D8DC05 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		EB7E92AD2A6B9A7D005672DB /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 		EBC57A782A1E46770099AB42 /* Webservice_Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice_Coffee.swift; sourceTree = "<group>"; };
 		EBD8B1362A0DE05D00F282C2 /* MVVMPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD8B1392A0DE05D00F282C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EB22BABF2A6A7AFA005E9F94 /* OrderViewModel.swift */,
+				EB7E92AD2A6B9A7D005672DB /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				EBD8B1522A0DE1A800F282C2 /* NewsListTableViewController.swift in Sources */,
 				EB634F652A1EF02600D8DC05 /* Order.swift in Sources */,
 				EB0F2B772A136FC1003DFAB0 /* Webservice_News.swift in Sources */,
+				EB7E92AE2A6B9A7D005672DB /* AddCoffeeOrderViewModel.swift in Sources */,
 				EBDD74E62A1505E9001E9593 /* ArticleViewModel.swift in Sources */,
 				EBD8B13C2A0DE05D00F282C2 /* SceneDelegate.swift in Sources */,
 				EBDD74E92A15C9D0001E9593 /* ArticleTableViewCell.swift in Sources */,
