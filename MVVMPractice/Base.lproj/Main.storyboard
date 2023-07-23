@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ldY-Bo-vPR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ldY-Bo-vPR">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -123,11 +122,11 @@
             <objects>
                 <viewController id="d2V-yg-r3G" customClass="AddOrderViewController" customModule="MVVMPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfe-gf-ZJW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-xz-da2">
-                                <rect key="frame" x="0.0" y="56" width="393" height="421"/>
+                                <rect key="frame" x="0.0" y="56" width="393" height="391.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoffeeTypeTableViewCell" id="AUS-t3-y8Z">
@@ -145,7 +144,7 @@
                                 </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ej-gL-7H4">
-                                <rect key="frame" x="96.666666666666686" y="614.33333333333337" width="200" height="34"/>
+                                <rect key="frame" x="96.666666666666686" y="555.33333333333337" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MCq-jg-ihH"/>
                                 </constraints>
@@ -153,7 +152,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jL-SQ-CgQ">
-                                <rect key="frame" x="96.666666666666686" y="680.33333333333337" width="200" height="34"/>
+                                <rect key="frame" x="96.666666666666686" y="621.33333333333337" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="OkM-R6-c6A"/>
                                 </constraints>
@@ -176,9 +175,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="DqY-IR-om6">
                         <barButtonItem key="leftBarButtonItem" title="Close" style="plain" id="484-SJ-bVU"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="8Hu-7I-HW0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="8Hu-7I-HW0">
+                            <connections>
+                                <action selector="save" destination="d2V-yg-r3G" id="Ecj-Uf-yb1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="0jL-SQ-CgQ" id="1gI-sf-ZDY"/>
+                        <outlet property="nameTextField" destination="3ej-gL-7H4" id="Geg-6O-Bv3"/>
                         <outlet property="tableView" destination="Rof-xz-da2" id="X2o-fy-M8v"/>
                     </connections>
                 </viewController>
